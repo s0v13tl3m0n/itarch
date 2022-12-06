@@ -1,44 +1,100 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!DOCTYPE html>
 
-    <title>Azure App Service - Sample Static HTML Site</title>
+<head> 
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Martel+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
+<title>Home | ElectricWorld.ie</title>
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  </head>
 
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-          <h1>Azure App Service - Sample Static HTML Site</h1>
-          <hr/>
-      </div>
-    </div>
+<body>
+    <!--\\\\\\\MAINTAIN THIS NAVIGATION BAR THROUGHOUT ALL PAGES///////-->
+    <section class="topnavi">
+        <div class="toplogo">
+            <a href="index.html"><img src="src/imgsrc/electricisolate.png" width="200" height="200" alt="Electric World logo"></a>
+        <div class="othernavs">
 
-    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container">
-        
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <img class="img-rectangle" src="img/azure-portal.png" alt="Azure App Service Web Apps" height="140">
-          <h2>Azure App Service Web Apps</h2>
-          <p>App Service Web Apps is a fully managed compute platform that is optimized for hosting websites and web applications. This platform-as-a-service (PaaS) offering of Microsoft Azure lets you focus on your business logic while Azure takes care of the infrastructure to run and scale your apps.</p>
+            <a href="contact.html"><img src="src/imgsrc/contact1.png" class="othernavbtns" id="contactbtn"  width=70px" height="70px" alt="Contact button"></a>
+            <a href="locations.html"><img src="src/imgsrc/location1.png" class="othernavbtns" href="\\\\\\\\\\\\" width=70px" height="70px" alt="Location button"></a>
+            <a href="cart.html"><img src="src/imgsrc/cart1.png" class="othernavbtns" href="\\\\\\\\\\\\" width=70px" height="70px" alt="Access current cart button"> </a>
+
         </div>
-      </div>
-    </div>
+        <div class="searchform">
+            <input type="text" placeholder="Search Electric World...">
+        </div>
+        </div>
+        
+        <br><br>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        <div class="navbar">
+            <ul class="navbarul">
+                <li><a href="items.html">LAPTOP/PC</a></li>
+                <li><a href="items.html">TV/DISPLAY</a></li>
+                <li><a href="items.html">MOBILE DEVICES</a></li>
+                <li><a href="items.html">ACCESSORIES</a></li>
+                <li><a href="items.html">NETWORKING</a></li>
+                <li><a href="items.html">> ALL</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- \\\\\\\MAINTAIN THIS NAVIGATION BAR THROUGHOUT ALL PAGES///////-->
+    <br><br><br>
+    <section class="maininteraction">
+        <div class="eventbanner1">
+            <img src="src/imgsrc/sale1.png" class="firstbanner" width="1850px" height="700px">
+           <!-- <button class="gotoitembtn" id="shopnow">SHOP NOW</button> -->
+        </div>
+        <br>
+        <div class="lessersales1">
+            <img src="src/imgsrc/sale0.png" class="secondbanner" width="890x" height="445px">
+            <img src="src/imgsrc/sale2.png" class="thirdbanner" width="890px" height="445px">
+        </div>
+        <br><br><br>
+        <div class="featureds">
+
+            <h1 id="featuredh1">THIS WEEKS FEATURED ITEMS</h1>
+            <br><br>
+            <div class="card">
+                <a href="itempage.html" class="itemhref"><img src="src/imgsrc/laptop0.png" href="itempage.html" alt="Laptop item preview Photo" height="250px" width="250px">
+                <h1>HP Pavilion 16 </h1>
+                <p class="price">€1499.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi..</p></a>
+                <p class="addbtn"><button class="gotoitembtn">ADD TO CART</button></p>
+              </div>
+              <div class="card">
+                <a href="itempage.html" class="itemhref"><img src="src/imgsrc/laptop1.png" alt="Laptop item preview Photo" height="250px" width="250px">
+                <h1>Dell Inspiron 11</h1>
+                <p class="price">€1499.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi..</p></a>
+                <p class="addbtn"><button class="gotoitembtn">ADD TO CART</button></p>
+              </div>
+              <div class="card">
+                <a href="itempage.html" class="itemhref"><img src="src/imgsrc/laptop5.png" alt="Laptop item preview Photo" height="250px" width="250px">
+                <h1>Lenovo Laptop 14"</h1>
+                <p class="price">€650.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi..</p></a>
+                <p class="addbtn"><button class="gotoitembtn">ADD TO CART</button></p>
+              </div>
+              <div class="card">
+                <a href="itempage.html" class="itemhref"><img src="src/imgsrc/laptop8.png" alt="Laptop item preview Photo" height="250px" width="250px">
+                <h1>Laptop 16 "</h1>
+                <p class="price">€599.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi..</p></a>
+                <p class="addbtn"><button class="gotoitembtn">ADD TO CART</button></p>
+              </div>
+        </div>
+
+
+
+    </section>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+</body>
+<footer></footer>
 </html>

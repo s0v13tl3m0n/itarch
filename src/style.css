@@ -1,0 +1,294 @@
+/* STYLESHEET FOR ELECTRIC WORLD*/
+/*Started by Callum Browne (20331303) on behalf of Group 6*/
+
+
+/* RESOURCES*/
+/* font-family: 'Roboto', sans-serif; - major font used on site*/
+/* font-family: 'Inter', sans-serif; - major font used on site*/
+
+body {
+background-color:  rgb(214, 79, 79);
+}
+
+.toplogo {
+  padding-left: 25px;
+  padding-top: 25px;
+  float: center;
+}
+
+
+
+.othernavs {
+  padding-right: 185px;
+  padding-top:50px;
+  float:right;
+}
+
+.searchform {
+  padding-left: 500px;
+  display: inline; 
+  float: center;
+  
+}
+/* PROPORTIONS HERE ARE PERFECT DO NO CHANGE THEM UNLESS IT FUCKS ITSELF */
+.searchform input[type=text] {
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  padding-right:170px;
+  padding-top:15px;
+  padding-bottom:10px;
+  border-radius:20px;
+  padding-left:15px;
+
+}
+
+.othernavbtns {padding-left:13px;padding-right:13px;}
+
+.othernavbtns:hover {
+
+}
+
+#contactbtn {
+ background-image:url('src/imgsrc/cart2.png');
+ 
+}
+#contactbtn:hover {
+    background-image:url('src/imgsrc/cart2.png');
+}
+
+.topnavi {  /* SECTION FOR TOP NAVIGATION AREA*/
+  background-color: #ff0000;
+
+  border: 4px solid #0050AD;
+}
+
+.navbarul {  /* LIST ITEMS FOR NAVIGATION BAR */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ff0000;
+  float:center;
+  
+}
+
+.navbarul li {
+  float: left;
+  font-family: 'Inter', sans-serif;
+  font-weight:900;
+  background-color: #ff0000;
+  float:center;
+  
+}
+
+.navbarul li a {
+  display: block;
+  padding-right: 111px;
+  padding-left: 110px;
+  border: 4px solid #0050AD;
+  background-color: #ff0000;
+  float:center;
+  
+}
+.navbarul a {
+  display: block;
+  padding: 8px;
+  background-color: #ff0000;
+  background-color: #ff0000;
+  float:center;
+  
+}
+
+.navbarul a:hover {
+  background-color: #0050AD;
+  color: #ff0000;
+  float:center;
+}
+
+
+.maininteraction {
+  display: block;
+  text-decoration: none;  
+}
+
+.firstbanner {
+  border:9px solid #0050AD;
+  border-radius:25px;
+  margin-left:85px;
+
+}
+
+.secondbanner {
+
+  margin-left:85px;
+  margin-right:29px;
+  border:9px solid #0050AD;
+  border-radius:20px;
+}
+
+.thirdbanner {
+
+  margin-right:110px;
+  border:9px solid #0050AD;
+  border-radius:20px;
+}
+
+.featureds {}
+
+#featuredh1 { 
+  text-align:center;
+  font-size:30px;
+  color:#00336d;
+}
+/* ////////////// ITEM CARD and LIST CSS ///////////////*/
+
+.itemtitle {
+  text-align: center;
+}
+
+.itemtitle h1 {
+  font-size: 30px;
+  font-weight: bold;
+
+  color:#00336d;
+  padding-bottom:45px;
+
+}
+.sidebar {
+
+}
+.card {
+  margin-left: 160px;
+  padding:20px;
+  border: 4px solid #0050AD;
+  margin-bottom:50px;
+  display: inline-block;
+  background-color: red;
+  width: 260px;
+  height:500px;
+  border-radius: 12px;
+  text-decoration: none;
+  vertical-align: top;
+  
+
+}
+
+.card img {
+  border-radius: 8px;
+  vertical-align: top;
+}
+
+.gotoitembtn {
+  background-color: rgb(255, 98, 98);
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  vertical-align: top;
+  border: 4px solid #0050AD;
+  font-size:17px;
+  font-weight:bold;
+}
+
+.gotoitembtn:hover {background-color: rgb(21, 71, 163);}  
+
+
+.addbtn .gotoitembtn {
+  margin-left: 44px;
+  margin-top: 24px;
+  margin-bottom:10px;
+}
+
+
+.itemhref {
+    text-decoration: none;
+    color:#003a7c;
+}
+
+.divcard .addbtn .gotoitembtn{
+  float: center;
+}
+
+.itemcardnm {     /* TRY GET SOME ... ACTION ON THE ITEMPAGE.HTML ITEM CARDS; MEANS WE CAN HAVE LONGER TITLES... < like that see?*/
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 1px; 
+  height: 1.2em; 
+  white-space: nowrap;
+}
+
+/* /////////// ITEM PAGE CSS //////////////*/
+
+.itempage {
+  display:flex; 
+}
+.itemprev {
+  width:100%;
+  padding-left:200px;
+  padding-top:370px;
+
+}
+
+.itemprev img {
+  
+  width:500px;
+  height:500px;
+  border:6px solid #0050AD; 
+  border-radius:10%;
+}
+
+.iteminfo {
+  padding:29px;
+  background-color: red;
+  margin-top:200px;
+  margin-left:400px;
+  margin-right:275px;
+  border:6px solid #0050AD;
+  border-radius:25px;
+}
+
+
+#add2cart {
+  margin-left:100px;
+  padding:10px;
+
+}
+
+#add2cart p {
+  
+}
+
+.locationframe {
+  float:left;
+  margin-left:130px;
+  display:inline;
+  color:blue ;
+  text-align:center;
+  font-size:26px;
+  color:#00336d;
+}
+
+.locationtxt {
+  display:inline;
+  color:blue ;
+  text-align:center;
+  font-size:26px;
+  color:#00336d;
+
+}
+
+.locationtxt p {
+  font-weight:bold;
+  padding-left:100px; 
+}
+
+.locations {
+
+  
+}
+
+
+.directionsp {
+  text-align:center;
+  padding:00px;
+}
