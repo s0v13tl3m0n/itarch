@@ -292,3 +292,19 @@ background-color:  rgb(214, 79, 79);
   text-align:center;
   padding:00px;
 }
+
+
+.cartitems {
+  background-color: blue;
+  padding-left:260px;
+  margin-left:80px;
+  margin-right: 62%;
+}
+
+.cartsection {background-color: magenta;}
+
+.carttotal {
+  padding-right:260px;
+  margin-right:80px;
+  margin-left:62%;
+}
