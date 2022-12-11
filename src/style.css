@@ -34,7 +34,7 @@
 }
 
 i.md90px {
-  font-size: 4vw;
+  font-size: 3.5vw;
   color: var(--logoblue);
   padding-right: 0.5%;
   -webkit-text-stroke: 0.25vw black; /* width and color */
@@ -84,7 +84,7 @@ i.md90px {
 	display: inline;
 	font-size: 8vw;
 	margin-left: 1vw;
-  margin-right: 2.5vw;
+  margin-right: 2vw;
 	overflow: hidden;
 	line-height: 7vw;
 	vertical-align: bottom;
