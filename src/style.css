@@ -65,9 +65,7 @@ i.md90px {
 }
   
 .navoption a:hover {
-	box-shadow: 0 0 4px 2px grey;
 	background-color: var(--logored);
-	/*color: var(--logoblue);*/
 }
 
 .logo {
@@ -90,7 +88,7 @@ i.md90px {
 	vertical-align: bottom;
 	color: var(--logoblue);
   font-family: "Zen Dots";
-  -webkit-text-stroke: 0.5vw black; /* width and color */
+  -webkit-text-stroke: 0.05em black; /* width and color */
 }
 
 .titlebar {
@@ -125,17 +123,37 @@ i.md90px {
 
 }
 
-.othernavbtns {padding-left:13px;padding-right:13px;}
 
-
-
-#contactbtn {
- background-image:url('src/imgsrc/cart2.png');
- 
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
 }
-#contactbtn:hover {
-    background-image:url('src/imgsrc/cart2.png');
+  
+input[type=submit] {
+  background-color: var(--logoblue);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
+  
+input[type=submit]:hover {
+  background-color: var(--logored);
+}
+  
+  .contactu {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  } 
 
 .topnavi {  /* SECTION FOR TOP NAVIGATION AREA*/
   background-color: var(--logored);
@@ -147,30 +165,6 @@ i.md90px {
   display: block;
   text-decoration: none;  
 }
-
-.firstbanner {
-  border:9px solid #0050AD;
-  border-radius:25px;
-  margin-left:85px;
-
-}
-
-.secondbanner {
-
-  margin-left:85px;
-  margin-right:29px;
-  border:9px solid #0050AD;
-  border-radius:20px;
-}
-
-.thirdbanner {
-
-  margin-right:110px;
-  border:9px solid #0050AD;
-  border-radius:20px;
-}
-
-.featureds {}
 
 #featuredh1 { 
   text-align:center;
@@ -186,69 +180,78 @@ i.md90px {
 .itemtitle h1 {
   font-size: 30px;
   font-weight: bold;
-
   color:#00336d;
   padding-bottom:45px;
 
 }
-.sidebar {
-
-}
 .card {
-  margin-left: 160px;
-  padding:20px;
-  border: 4px solid #0050AD;
+  padding: 2%;
+  border: 0.5vw solid var(--logoblue);
   margin-bottom:50px;
   display: inline-block;
-  background-color: red;
-  width: 260px;
-  height:500px;
+  background-color: var(--logored);
+  width: 95%;
+  height: 50%;
   border-radius: 12px;
   text-decoration: none;
   vertical-align: top;
-  
-
+}
+.leftbox {
+	display: table-cell;
+  width: 20%;
+}
+.midbox {
+	display: table-cell;
+  width: 35%;
+  font-size: 1vw;
+  margin-left: 1%;
 }
 
-.card img {
+.rightbox {
+  display: table-cell;
+  width: 100%;
+  margin-left: 20%;
+  font-size: 1vw;
+}
+
+.cardimg {
   border-radius: 8px;
+  max-height: 20vw;
+  max-width: 20vw;
   vertical-align: top;
+ 
+  border: 0.5vw solid var(--logoblue);
 }
 
 .gotoitembtn {
-  background-color: rgb(255, 98, 98);
   width: 150px;
   height: 40px;
   border-radius: 20px;
   vertical-align: top;
-  border: 4px solid #0050AD;
-  font-size:17px;
+  border: 4px solid var(--logoblue);
+  font-size:1vw;
   font-weight:bold;
 }
 
-.gotoitembtn:hover {background-color: rgb(21, 71, 163);}  
+.gotoitembtn:hover {
+  background-color: var(--logoblue);
+  color: white;
+  border-color: white;
+}  
 
-
-.addbtn .gotoitembtn {
+/* .addbtn .gotoitembtn {
   margin-left: 44px;
   margin-top: 24px;
   margin-bottom:10px;
-}
+} */
 
 
-.itemhref {
-    text-decoration: none;
-    color:#003a7c;
-}
 
-.divcard .addbtn .gotoitembtn{
-  float: center;
-}
 
 .itemcardnm {     /* TRY GET SOME ... ACTION ON THE ITEMPAGE.HTML ITEM CARDS; MEANS WE CAN HAVE LONGER TITLES... < like that see?*/
   text-overflow: ellipsis;
   overflow: hidden; 
-  width: 1px; 
+  width: 1px;
   height: 1.2em; 
   white-space: nowrap;
 }
@@ -290,10 +293,6 @@ i.md90px {
 
 }
 
-#add2cart p {
-  
-}
-
 .locationframe {
   float:left;
   margin-left:130px;
@@ -317,12 +316,6 @@ i.md90px {
   font-weight:bold;
   padding-left:100px; 
 }
-
-.locations {
-
-  
-}
-
 
 .directionsp {
   text-align:center;
