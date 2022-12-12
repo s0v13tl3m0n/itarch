@@ -8,11 +8,11 @@
     <link href='https://fonts.googleapis.com/css?family=Zen Dots' rel='stylesheet'>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Martel+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
-<title>Home | ElectricWorld.ie</title>
+<title>Cart | ElectricWorld.ie</title>
 </head>
 
 
-<body>
+<body onload="set_theme()">
     <!--\\\\\\\MAINTAIN THIS NAVIGATION BAR THROUGHOUT ALL PAGES///////-->
     <section class="topnavi">
         <div class="titlebar">
@@ -42,22 +42,22 @@
         </nav>
     
     </section>
-<br><br><br><br>
 <section class="cartsection">
 
-    <div class="cartitems">
-        <h1> All Items</h1>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
+    <div id="cart_cont"></div>
+    <script>cartPage()</script>
    <!-- <div class="carttotal">
         <h1> Total</h1>
 
     </div> -->
  
 </section>
+<!-- <footer id = "footer-layout">
+    <p> &copy; <a href="https://dcu.ie/">DCU 2022-2023</a>
+        <span class="footer-separator">&middot;</span>
+        <span class="footer-text">Group 6 CA349</span> <span class="footer-separator">&middot;</span>
+    <span class="footer-text">This is student coursework</span>
+    </p>
+</footer> -->
 </body>
-<footer></footer>
 </html>
