@@ -36,8 +36,8 @@ h3 {
 	width: 100%;
 	color: var(--text);
 	font-size: 1.25vw;
-	position:relative;
-	bottom:0;
+	position:fixed;
+	bottom: 0;
 	background-color: var(--logoblue);
 	color: var(--background);
 	text-align: center;
@@ -217,10 +217,12 @@ input[type=submit]:hover {
   text-decoration: none;
   vertical-align: top;
 }
+
 .leftbox {
 	display: table-cell;
   width: 5%;
 }
+
 .midbox {
   background-color: var(--background);
   color: var(--text);
@@ -259,6 +261,7 @@ input[type=submit]:hover {
   border-color: white;
 }  
 
+
 .locationframe {
   float:left;
   margin-left:130px;
@@ -269,6 +272,43 @@ input[type=submit]:hover {
   color:#00336d;
 }
 
-.cartsection {background-color: magenta;}
+#cart_cont{
+  width: 100%;
+}
 
+.cartsection th{
+  border: 5px solid var(--text);
+  color: var(--text);
+  text-align: center;
+  width: 5vw;
+}
+
+.cartsection td{
+  border: 2px solid var(--text);
+  color: var(--text);
+  text-align: center;
+  width: 5vw;
+}
+
+.map {
+	display: table-cell;
+  width: 100%;
+}
+
+iframe {
+  width: 60vw;
+  height: 18vw;
+  margin-left: 30%;
+}
+
+.mapnotes {
+  background-color: var(--background);
+  color: var(--text);
+	display: table-cell;
+
+  font-size: 1vw;
+  width: 20%;
+
+  border-radius: 12px;
+}
 

@@ -1,3 +1,22 @@
+var prices = {
+    "HP Pavilion Gaming Laptop": 1499.99,
+    "HP chromebook": 399.99,
+    "HP Probook": 482.99,
+    "HP ENVY": 1029.99,
+    "APPLE iphone 13": 879.99,
+    "SAMSUNG Galaxy S22": 899.99,
+    "GOOGLE Pixel 7": 649.99,
+    "OPPO A54": 219.99,
+    "SONY WH-1000XM5": 359.99,
+    "META Quest 2": 449.99,
+    "FITBIT Versa 3": 149.99,
+    "DJI Air 2S Drone": 1029.99,
+    "SAMSUNG QE55S95BATXXU": 1799.99,
+    "HISENSE 43A6BGTUK 43": 299.99,
+    "JVC LT-58CA810 Android TV": 499.99,
+    "SAMSUNG The Frame QE32LS03BBUXXU 32": 549.99,
+};
+
 function swap_theme() {
     var element = document.body
     if (element != null) {
@@ -74,6 +93,26 @@ function cartPage() {
             cartMap.set(x, cartMap.get(x)+1);
         }
     }
+    
     for (var[key, value] of cartMap){
+        console.log(prices[key])
         if (value != 0 && key != ""){
-        document.getElementById('cart_cont').innerHTML += `<br>${key} : ${cartMap.get(key)} <button onclick="delitem('${key}')">delete</button> <button onclick="additem('${key}')">add</button>`;}}}
+            cost = (cartMap.get(key) * prices[key]).toFixed(2);
+            var table = document.getElementById("cart_cont");
+            var row = table.insertRow(1);
+
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            var cell6 = row.insertCell(5);
+
+            cell1.innerHTML = `${key}`;
+            cell2.innerHTML = `${cartMap.get(key)}`; 
+            cell3.innerHTML = `${prices[key]}`;
+            cell4.innerHTML = `${cost}`; 
+            cell5.innerHTML = `<button onclick="delitem('${key}')">delete</button>`;
+            cell6.innerHTML = `<button onclick="additem('${key}')">add</button>`;
+        }
+    }}
